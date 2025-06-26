@@ -1,0 +1,88 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo negro como terminal */
+body {
+  background-color: #1e1e1e;
+  font-family: 'Courier New', Courier, monospace;
+  color: #33ff33;
+  padding: 2rem;
+}
+
+/* Contenedor de la terminal */
+.terminal {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  background-color: #000000;
+}
+
+/* Cabecera tipo ventana macOS */
+.header {
+  background-color: #2d2d2d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Botones de colores en la parte superior */
+.buttons span {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.title {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Contenido del cuerpo (emula comandos) */
+.body {
+  padding: 20px;
+}
+
+.prompt {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+a {
+  color: #33bbff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin-left: 20px;
+  list-style-type: square;
+}
+#terminal-input {
+  background-color: transparent;
+  border: none;
+  color: #33ff33;
+  font-family: inherit;
+  font-size: 1em;
+  outline: none;
+  width: 80%;
+}
+
+#terminal-input::placeholder {
+  color: #555;
+}
